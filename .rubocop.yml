@@ -1,0 +1,7 @@
+AllCops:
+  Exclude:
+    - Rakefile
+    - '**/tempCodeRunnerFile.rb'
+
+Layout/EndOfLine:
+  EnforcedStyle: lf

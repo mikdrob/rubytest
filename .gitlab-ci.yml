@@ -1,0 +1,21 @@
+image: ruby:2.7
+
+stages:
+  - lint
+  - test
+
+lint-lab:
+  tags:
+    - docker
+  stage: lint
+  script:
+    - gem install rubocop
+    - rake rubocop
+
+test-lab:
+  tags:
+    - docker
+  stage: test
+  script:
+    - gem install minitest
+    - rake test
